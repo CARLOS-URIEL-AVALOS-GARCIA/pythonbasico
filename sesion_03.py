@@ -18,7 +18,7 @@ mi_lista_2 = ["lunes","martes","miercoles","jueves","viernes"]
 for i in mi_lista_2:
     if i == "lunes":
         print(f"feliz{i}¡")
-        
+
         # while loop
 i = 0
 
@@ -50,3 +50,11 @@ else:
 # miercoles
 # jueves
 # viernes
+mi_lista_2 = ["lunes","martes","miercoles","jueves","viernes"]
+for dias in mi_lista_2:
+    if dias in mi_lista_2:
+        contador = 0
+        while contador < 3:
+            print(dias)
+            contador += 1
+    
