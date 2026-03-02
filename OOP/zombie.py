@@ -1,4 +1,5 @@
 from Enemigo import *
+import random
 
 class Zombie(Enemigo):
     def __int_(self,puntos_energia = 10, ataque=1):
@@ -8,4 +9,11 @@ class Zombie(Enemigo):
             print("hhummmmmmm...*")
 
     def propagar_emfermedad(self):
-         print("El zombie esta tratando de propagar ls enfermedad")
+         print("El zombie esta tratando de propagar la enfermedad")
+
+def ataque_especial(self):
+        print("Zombie ataque especial")
+        funciona_ataque_especial = random.random() < 0.50
+        if funciona_ataque_especial:
+            self.puntos_energia += 2
+            print("Zombie ha regenerado su energia con 2HP!")
