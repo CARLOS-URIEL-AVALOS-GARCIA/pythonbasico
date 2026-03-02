@@ -11,7 +11,7 @@ class Zombie(Enemigo):
     def propagar_emfermedad(self):
          print("El zombie esta tratando de propagar la enfermedad")
 
-def ataque_especial(self):
+    def ataque_especial(self):
         print("Zombie ataque especial")
         funciona_ataque_especial = random.random() < 0.50
         if funciona_ataque_especial:
