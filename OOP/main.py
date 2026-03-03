@@ -21,12 +21,13 @@ def batalla(e1:Enemigo, e2: Enemigo):
         print(f"Ataque:{e2.ataque}")
         e2.puntos_de_energia -= e1.ataque
 
-        print("##################")
-        if e1.puntos_de_energia > 0:
+    print("##################")
+    if e1.puntos_de_energia > 0:
             print(f"{e2.get_tipo_enemigo()}gano")
+    else:
             print(f"{e1.get_tipo_enemigo()}gano")
-            print("==========BATALLA==========")
-            batalla(zombie,ogro)
-            print("==========FIN DE LA BATALLA==========")
+print("==========BATALLA==========")
+batalla(zombie,ogro)
+print("==========FIN DE LA BATALLA==========")
 #print(f"{zombie.get_tipo_enemigo()}tiene{zombie.puntos_energia}de energia y ataca con {zombie.ataque}")
 #print(f"{zombie.get_tipo_enemigo()}tiene{ogro.puntos_energia}de energia y ataca con {ogro.ataque}")
